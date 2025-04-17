@@ -1,3 +1,3 @@
-# Lua-CheatScript
+# Lua-CheatScript Exploit
 ```
 Script Servers Updates....

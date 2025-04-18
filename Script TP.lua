@@ -9,14 +9,14 @@ local hrp = player.Character and player.Character:FindFirstChild("HumanoidRootPa
 
 local function requestTeleport(target)
     if hrp and target then
-        teleportEvent:FireServer(target, hrp.Position + Vector3.new(0, 5, 0)) -- TP au-dessus de toi
+        teleportEvent:FireServer(target, hrp.Position + Vector3.new(0, 5, 0)) -- TP 
     end
 end
 
 game:GetService("UserInputService").InputBegan:Connect(function(input, isTyping)
     if isTyping then return end
     if input.KeyCode == Enum.KeyCode.P then
-        local targetName = "@Rayweths" -- Remplace ça par le pseudo du joueur que tu veux TP
+        local targetName = "@Rayweths" -- pseudo 
         local target = game.Players:FindFirstChild(targetName)
         if target then
             requestTeleport(target)
